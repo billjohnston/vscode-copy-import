@@ -19,7 +19,7 @@ Configuration example:
 ```
 "copyImport.rootAlias": "@",
 "copyImport.fileExtensionImportTemplateMap": {
-        "js": "import {{BASENAME}} from '{{ROOT_ALIAS}}/{{FILE_PATH}}'",
-        "py": "from {{DOT_PATH}} import {{BASENAME}}"
-    }
+    "js": "import {{BASENAME}} from '{{ROOT_ALIAS}}/{{FILE_PATH}}'",
+    "py": "from {{DOT_PATH}} import {{BASENAME}}"
+}
 ```
