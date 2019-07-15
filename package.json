@@ -1,5 +1,12 @@
 {
 	"name": "copy-import",
+	"author": {
+		"name": "Bill Johnston"
+	},
+	"repository": {
+		"type" : "git",
+		"url" : "https://github.com/billjohnston/vscode-copy-import"
+	},
 	"displayName": "Copy import",
 	"description": "Copies import code for file in explorer menu",
 	"version": "0.0.1",
