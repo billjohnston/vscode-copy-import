@@ -33,7 +33,7 @@
 				"copyImport.fileExtensionImportTemplateMap": {
 					"type": "object",
 					"default": {},
-					"markdownDescription": "A map of file extensions to their import template\n\n\nSubstition varialbes:\n\n\n`{{EXT}}` `{{BASENAME}}` `{{PROJECT_ROOT}}` `{{FILE_PATH}}` `{{DOT_PATH}}` `{{ROOT_ALIAS}}`\n\n\nConfiguration example:\n\n```\n\"copyImport.fileExtensionImportTemplateMap\": {\n\t\"js\": \"import {{BASENAME}} from '{{ROOT_ALIAS}}/{{FILE_PATH}}'\",\n\t\"py\": \"from {{DOT_PATH}} import {{BASENAME}}\"\n}\n```"
+					"markdownDescription": "A map of file extensions to their import template\n\n\nSubstition variables:\n\n\n`{{EXT}}` `{{BASENAME}}` `{{PROJECT_ROOT}}` `{{FILE_PATH}}` `{{DOT_PATH}}` `{{ROOT_ALIAS}}`\n\n\nConfiguration example:\n\n```\n\"copyImport.fileExtensionImportTemplateMap\": {\n\t\"js\": \"import {{BASENAME}} from '{{ROOT_ALIAS}}/{{FILE_PATH}}'\",\n\t\"py\": \"from {{DOT_PATH}} import {{BASENAME}}\"\n}\n```"
 				}
 			}
 		},
