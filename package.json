@@ -1,0 +1,58 @@
+{
+	"name": "copy-import",
+	"displayName": "Copy import",
+	"description": "Copies import code for file in explorer menu",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.36.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:extension.copyImport"
+	],
+	"main": "./extension.js",
+	"markdown": "standard",
+	"contributes": {
+		"configuration": {
+			"title": "Copy Import",
+			"properties": {
+				"copyImport.rootAlias": {
+					"type": "string",
+					"default": "",
+					"markdownDescription": "An alias for your project root used for substitutions in import templates"
+				},
+				"copyImport.fileExtensionImportTemplateMap": {
+					"type": "object",
+					"default": {},
+					"markdownDescription": "A map of file extensions to their import template\n\n\nSubstition varialbes:\n\n\n`{{EXT}}` `{{BASENAME}}` `{{PROJECT_ROOT}}` `{{FILE_PATH}}` `{{DOT_PATH}}` `{{ROOT_ALIAS}}`\n\n\nConfiguration example:\n\n```\n\"copyImport.fileExtensionImportTemplateMap\": {\n\t\"js\": \"import {{BASENAME}} from '{{ROOT_ALIAS}}/{{FILE_PATH}}'\",\n\t\"py\": \"from {{DOT_PATH}} import {{BASENAME}}\"\n}\n```"
+				}
+			}
+		},
+		"commands": [{
+            "command": "extension.copyImport",
+			"title": "Copy Import"
+		}],
+		"menus": {
+			"explorer/context": [{
+				"command": "extension.copyImport",
+				"group": "6_copypath"
+			}]
+		}
+	},
+	"scripts": {
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^5.2.6",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.36.0",
+		"eslint": "^5.13.0",
+		"glob": "^7.1.4",
+		"mocha": "^6.1.4",
+		"typescript": "^3.3.1",
+		"vscode-test": "^1.0.0-next.0"
+	}
+}
