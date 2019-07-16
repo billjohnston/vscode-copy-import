@@ -21,7 +21,6 @@
 		"onCommand:extension.copyImport"
 	],
 	"main": "./extension.js",
-	"markdown": "standard",
 	"contributes": {
 		"configuration": {
 			"title": "Copy Import",
