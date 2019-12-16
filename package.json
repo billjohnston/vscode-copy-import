@@ -41,7 +41,7 @@
 			{
         	    "command": "extension.copyImport",
 				"title": "Copy Import"
-			},
+			}
 		],
 		"menus": {
 			"explorer/context": [{
