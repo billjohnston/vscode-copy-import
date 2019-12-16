@@ -5,12 +5,12 @@
 		"name": "Bill Johnston"
 	},
 	"repository": {
-		"type" : "git",
-		"url" : "https://github.com/billjohnston/vscode-copy-import"
+		"type": "git",
+		"url": "https://github.com/billjohnston/vscode-copy-import"
 	},
 	"displayName": "Copy import",
 	"description": "Copies import code for file in explorer menu",
-	"version": "0.0.2",
+	"version": "0.1.0",
 	"engines": {
 		"vscode": "^1.36.0"
 	},
@@ -39,19 +39,23 @@
 		},
 		"commands": [
 			{
-        	    "command": "extension.copyImport",
+				"command": "extension.copyImport",
 				"title": "Copy Import"
 			}
 		],
 		"menus": {
-			"explorer/context": [{
-				"command": "extension.copyImport",
-				"group": "6_copypath"
-			}],
-			"editor/title/context": [{
-				"command": "extension.copyImport",
-				"group": "6_copypath"
-			}]
+			"explorer/context": [
+				{
+					"command": "extension.copyImport",
+					"group": "6_copypath"
+				}
+			],
+			"editor/title/context": [
+				{
+					"command": "extension.copyImport",
+					"group": "6_copypath"
+				}
+			]
 		}
 	},
 	"scripts": {
