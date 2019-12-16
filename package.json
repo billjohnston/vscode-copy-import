@@ -37,12 +37,18 @@
 				}
 			}
 		},
-		"commands": [{
-            "command": "extension.copyImport",
-			"title": "Copy Import"
-		}],
+		"commands": [
+			{
+        	    "command": "extension.copyImport",
+				"title": "Copy Import"
+			},
+		],
 		"menus": {
 			"explorer/context": [{
+				"command": "extension.copyImport",
+				"group": "6_copypath"
+			}],
+			"editor/title/context": [{
 				"command": "extension.copyImport",
 				"group": "6_copypath"
 			}]
